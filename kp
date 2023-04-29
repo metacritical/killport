@@ -1,0 +1,43 @@
+#!/bin/bash
+#
+
+_optargs () {
+    usage="$0 [-h] | [port] | [port1 port2 ..... portX] -- program to kill process
+    Usage: `basename "$0"` [OPTION]
+
+    Example: $0 port port1 port2
+
+    Miscellaneous :
+    -h  show this help text
+    -v  version"
+
+    while getopts ':hv' option; do
+     case "$option" in
+       h) echo "$usage"
+          exit
+          ;;
+       v) echo "0.0.1"
+          exit
+          ;;
+     esac
+    done
+
+    if [[ -z $1 ]]; then
+        echo "$usage"
+    fi
+}
+
+kp () {
+
+    _optargs $@
+
+    re='^[0-9]+$'
+    if [[ $1 =~ $re ]]; then #check if an inout is a number
+    for i in "$@"; do
+     kill $(lsof -t -i:$i)
+    done
+    fi
+}
+
+
+kp $@
