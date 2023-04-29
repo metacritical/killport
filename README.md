@@ -1,6 +1,6 @@
 # killport
 
-`killport` is a command-line utility for killing processes listening on specific ports. It's designed to be simple, fast, and effective. Its a simple bash script and works on Linux and macOS.
+`killport` is a just for gigs, command-line utility for killing processes listening on specific ports. It's designed to be simple, fast, and effective. Its a simple bash script and works on Linux and macOS. 
 
 ## Features
 
