@@ -28,9 +28,6 @@ Run the following command to automatically download and install `killport`:
 curl -L https://bit.ly/3ABTXJR | sh
 ```
 
-Don't forget to add `$HOME/.local/bin` to your `PATH` environment variable, if it's not already present.
-
-
 ### Binary Releases
 
 You can download the binary releases for different architectures from the [releases page](https://github.com/metacritical/killport/releases) and manually install them.
