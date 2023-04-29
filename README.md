@@ -64,7 +64,7 @@ kp 8045 8046 8080
 
 ## Contributing
 
-# Please dont contrubute to silly oneline utilities its a pun software, just for gigs!
+# Please dont contribute to silly oneline utilities its a pun software, just for gigs!
 
 ## License
 
